@@ -1,0 +1,11 @@
+.home {
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 24px 14px;
+}
+
+
+.home-greeting p {
+    margin-top: 10px;
+}

@@ -1,0 +1,25 @@
+:root {
+  --color-background: #f7f5f0; /* Used for the background color */
+  --color-surface: #fefdfb; /* Used for the card colors - slightly darker than background */
+
+  --color-text: #292a27;
+  --color-text-muted: #74736e;
+  --color-accent: #927052;
+
+  --color-border: #e5e1d8;
+
+  --color-primary: #6a6e53;
+  --color-primary-soft: #e8ede5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: system-ui, sans-serif;
+}
