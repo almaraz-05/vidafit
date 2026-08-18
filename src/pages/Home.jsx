@@ -1,5 +1,6 @@
 import "./Home.css";
 import WorkoutCard from "../components/WorkoutCard";
+import WeeklyOverview from "../components/WeeklyOverview";
 function Home() {
     return (
         <main className="home">
@@ -8,6 +9,7 @@ function Home() {
                 <p>Ready to move?</p>
             </section>
             <WorkoutCard />
+            <WeeklyOverview />
 
         </main>
 

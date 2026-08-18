@@ -1,0 +1,48 @@
+.weekly-overview {
+    margin-top: 32px;
+}
+
+.weekly-overview-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.view-calendar {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: var(--color-accent);
+    cursor: pointer;
+}
+
+.weekly-overview-days {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.weekly-day-status {
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--color-border);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weekly-day-status.completed {
+    background-color: var(--color-primary);
+    color: White;
+} 
+
+.weekly-day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
