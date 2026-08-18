@@ -1,6 +1,7 @@
 import "./Home.css";
 import WorkoutCard from "../components/WorkoutCard";
 import WeeklyOverview from "../components/WeeklyOverview";
+import QuickStart from "../components/QuickStart";
 function Home() {
     return (
         <main className="home">
@@ -10,6 +11,7 @@ function Home() {
             </section>
             <WorkoutCard />
             <WeeklyOverview />
+            <QuickStart />
 
         </main>
 

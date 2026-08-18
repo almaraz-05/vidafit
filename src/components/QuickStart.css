@@ -1,0 +1,22 @@
+.quick-start {
+    margin-top: 36px;
+}
+
+.quick-start-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quick-start-see-all {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: var(--color-accent);
+    cursor: pointer;
+}
+
+.quick-start-exercise {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}

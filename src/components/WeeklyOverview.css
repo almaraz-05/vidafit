@@ -36,7 +36,8 @@
 
 .weekly-day-status.completed {
     background-color: var(--color-primary);
-    color: White;
+    color: white;
+    border-color: var(--color-primary);
 } 
 
 .weekly-day {
