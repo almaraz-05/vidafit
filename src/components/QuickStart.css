@@ -19,4 +19,29 @@
 .quick-start-exercise {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.quick-start-card {
+    min-height: 100px;
+    padding: 20px 12px;
+    background-color: var(--color-surface);
+    border-radius: 15px;
+    color: var(--color-text);
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.cardio-icon {
+    color: #c65d57;
+    fill: #c65d57;
+}
+
+.mobility-icon {
+    color: #6a6e53;
 }
