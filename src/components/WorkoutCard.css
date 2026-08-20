@@ -68,3 +68,7 @@
 .workout-card-left {
     flex: 1;
 }
+
+.workout-card-icon svg {
+    color: white;
+}

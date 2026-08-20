@@ -1,4 +1,5 @@
 import "./WorkoutCard.css";
+import { Dumbbell } from "lucide-react";
 
 function WorkoutCard() {
     return (
@@ -10,7 +11,7 @@ function WorkoutCard() {
 
                     <div className="workout-card-info">
                         <div className="workout-card-icon">
-                            🏋️
+                            <Dumbbell />
                         </div>
 
                         <div className="workout-card-content">

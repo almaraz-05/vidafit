@@ -2,6 +2,7 @@ import "./Home.css";
 import WorkoutCard from "../components/WorkoutCard";
 import WeeklyOverview from "../components/WeeklyOverview";
 import QuickStart from "../components/QuickStart";
+import RecentActivity from "../components/RecentActivity";
 function Home() {
     return (
         <main className="home">
@@ -12,6 +13,7 @@ function Home() {
             <WorkoutCard />
             <WeeklyOverview />
             <QuickStart />
+            <RecentActivity />
 
         </main>
 
