@@ -3,6 +3,7 @@ import WorkoutCard from "../components/WorkoutCard";
 import WeeklyOverview from "../components/WeeklyOverview";
 import QuickStart from "../components/QuickStart";
 import RecentActivity from "../components/RecentActivity";
+import BottomNav from "../components/BottomNav";
 function Home() {
     return (
         <main className="home">
@@ -14,6 +15,7 @@ function Home() {
             <WeeklyOverview />
             <QuickStart />
             <RecentActivity />
+            <BottomNav />
 
         </main>
 
