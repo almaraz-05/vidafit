@@ -1,6 +1,6 @@
 :root {
-  --color-background: #f7f5f0; /* Used for the background color */
-  --color-surface: #fefdfb; /* Used for the card colors - slightly darker than background */
+  --color-background: #faf8f5; /* Used for the background color */
+  --color-surface: #ffffff; /* Used for the card colors - slightly darker than background */
 
   --color-text: #292a27;
   --color-text-muted: #74736e;
