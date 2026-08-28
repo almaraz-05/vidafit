@@ -1,0 +1,46 @@
+.workouts {
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 24px 20px 99px;
+}
+
+.workouts-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.workouts-header-left {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.workouts-header-right {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+.workouts-header-filter {
+    background: none;
+    color: var(--color-text);
+}
+
+.workouts-header-plus {
+    color: white;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+}
+
+.workouts-header-filter,
+.workouts-header-plus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
