@@ -18,6 +18,10 @@
 
 }
 
+.bottom-nav-info.active {
+    color: var(--color-accent);
+}
+
 .bottom-nav-info {
     display: flex;
     flex-direction: column;
@@ -31,15 +35,6 @@
     font: inherit;
     font-size: 14px;
     color: #6f6b66;
+    text-decoration: none;
 }
 
-.bottom-nav-info svg {
-    width: 26px;
-    height: 26px
-}
-
-.bottom-nav-info:first-child {
-    font-weight: bold;
-    color: black;
-    font-size: 15px;
-}
