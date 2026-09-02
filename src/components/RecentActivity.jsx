@@ -4,9 +4,9 @@ import "./RecentActivity.css";
 function RecentActivity() {
 
     const activities = [
-        { name: "Upper",  icon: Dumbbell, iconClass: "upper-activtiy-icon",  date: "Today",     exercises: "6 exercises", time: "1hr 15min" },
-        { name: "Lower",  icon: Dumbbell, iconClass: "lower-activity-icon",  date: "August 17", exercises: "5 exercises", time: "1 hr 5 min" },
-        { name: "Cardio", icon: Heart,    iconClass: "cardio-activity-icon", date: "August 15", distance: "4 miles", time: "42 min" }
+        { name: "Upper",  icon: Dumbbell, iconClass: "upper-activtiy-icon",  date: "Today",     exercises: "6 exercises", time: "1h 15m" },
+        { name: "Lower",  icon: Dumbbell, iconClass: "lower-activity-icon",  date: "August 17", exercises: "5 exercises", time: "1h 5m" },
+        { name: "Cardio", icon: Heart,    iconClass: "cardio-activity-icon", date: "August 15", distance: "4 miles", time: "42m" }
     ];
 
     return (

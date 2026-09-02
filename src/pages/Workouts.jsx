@@ -1,6 +1,7 @@
 import { Filter, Plus } from "lucide-react";
 import "./Workouts.css";
 import WorkoutTab from "../components/WorkoutsTab";
+import MyWorkouts from "../components/MyWorkouts";
 
 function Workouts() {
     return (
@@ -23,6 +24,7 @@ function Workouts() {
             </section>
 
             <WorkoutTab />
+            <MyWorkouts />
 
 
 
