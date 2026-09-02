@@ -1,0 +1,30 @@
+.workouts-tab {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--color-surface);
+    border-radius: 24px;
+    padding: 0;
+    gap: 4px;
+    margin-top: 20px;
+
+}
+
+.workouts-tab-button {
+    /* flex: 1; */
+    background: none;
+    border: none;
+    border-radius: 24px;
+    background-color: var(--color-surface);
+
+    color: var(--color-text);
+    white-space: nowrap;
+    padding: 12px 12px;
+    font-size: 13px;
+
+}
+
+.workouts-tab-button.active {
+    background-color: var(--color-primary);
+    color: white;
+}
