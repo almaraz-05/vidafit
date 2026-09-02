@@ -1,11 +1,11 @@
 import "./MyWorkouts.css";
-import { Dumbbell, Heart, Gauge, Ellipsis } from "lucide-react";
+import { Dumbbell, Heart, Gauge, Ellipsis, Plus } from "lucide-react";
 
 function MyWorkouts() {
 
     const activities = [
         { name: "Upper Body", icon: Dumbbell, iconClass: "upper-activity-icon", exercises: "6 exercises", time: "1h 15m" },
-        { name: "Lower Body", icon: Dumbbell, iconClass: "lower-activity-icon", exercises: "6 exercises", time: "1h 5mm"},
+        { name: "Lower Body", icon: Dumbbell, iconClass: "lower-activity-icon", exercises: "6 exercises", time: "1h 5m"},
         { name: "Cardio", icon: Heart, iconClass: "cardio-activity-icon", runType: "Recovery Run", time: "45m"},
         { name: "Core & Abs", icon: Gauge, iconClass: "core-activity-icon", exercises: "6 exercises", time: "20m" }
     ];
@@ -57,7 +57,8 @@ function MyWorkouts() {
                 })}
 
                 <button className="add-workout-card">
-                    + Add New Workout
+                    <Plus /> 
+                    <span>Add New Workout</span>
                 </button>
 
                 
