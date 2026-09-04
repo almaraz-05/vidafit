@@ -1,6 +1,5 @@
 import "./MyWorkouts.css";
 import { Dumbbell, Heart, Gauge, Ellipsis, Plus } from "lucide-react";
-
 function MyWorkouts() {
 
     const activities = [
@@ -42,9 +41,9 @@ function MyWorkouts() {
 
 
 
-                            <div className="my-workouts-ellipsis">
+                            <button className="my-workouts-ellipsis">
                                 <Ellipsis />
-                            </div>
+                            </button>
                         </div>
 
 

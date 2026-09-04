@@ -2,8 +2,12 @@ import { Filter, Plus } from "lucide-react";
 import "./Workouts.css";
 import WorkoutTab from "../components/WorkoutsTab";
 import MyWorkouts from "../components/MyWorkouts";
+import { useState } from "react";
 
 function Workouts() {
+
+    const [activeTab, setActiveTab] = useState("My Workouts");
+
     return (
         <main className="workouts">
             <section className="workouts-header">
@@ -23,8 +27,17 @@ function Workouts() {
                 </div>
             </section>
 
-            <WorkoutTab />
-            <MyWorkouts />
+            <WorkoutTab 
+                activeTab={activeTab}
+                setActiveTab={setActiveTab}    
+            />
+
+            {activeTab === "My Workouts" && <MyWorkouts />}
+            {activeTab === "Templates" && <Templates />}
+            {activeTab === "Favorites" && <Favorites />}
+            {activeTab === "History" && <History />}
+
+            {/* <MyWorkouts /> */}
 
 
 

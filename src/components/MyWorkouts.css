@@ -59,3 +59,9 @@
     color: var(--color-accent);
     cursor: pointer;
 }
+
+.my-workouts-ellipsis {
+    background: none;
+    color: var(--color-text);
+    border: none;
+}

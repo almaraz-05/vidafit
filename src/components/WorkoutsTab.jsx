@@ -1,8 +1,6 @@
-
-import { useState } from "react";
 import "./WorkoutsTab.css";
 
-function WorkoutTab() {
+function WorkoutTab({activeTab, setActiveTab }) {
 
     const tabs = [
         "My Workouts",
@@ -11,7 +9,6 @@ function WorkoutTab() {
         "History"
     ];
 
-    const [activeTab, setActiveTab] = useState("My Workouts");
 
     return (
         <div className="workouts-tab">
