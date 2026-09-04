@@ -1,8 +1,13 @@
 import { Filter, Plus } from "lucide-react";
+import { useState } from "react";
 import "./Workouts.css";
+
 import WorkoutTab from "../components/WorkoutsTab";
 import MyWorkouts from "../components/MyWorkouts";
-import { useState } from "react";
+import Templates from "../components/Templates";
+import Favorites from "../components/Favorites";
+import History from "../components/History";
+
 
 function Workouts() {
 
@@ -37,7 +42,6 @@ function Workouts() {
             {activeTab === "Favorites" && <Favorites />}
             {activeTab === "History" && <History />}
 
-            {/* <MyWorkouts /> */}
 
 
 
