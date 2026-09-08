@@ -15,7 +15,7 @@ function Workouts() {
 
     return (
         <main className="workouts">
-            <section className="workouts-header">
+            <header className="workouts-header">
                 <div className="workouts-header-left">
                     <h1>Workouts</h1>
                     <p>Build consistency. See results.</p>
@@ -30,7 +30,7 @@ function Workouts() {
                         <Plus />
                     </button>
                 </div>
-            </section>
+            </header>
 
             <WorkoutTab 
                 activeTab={activeTab}
