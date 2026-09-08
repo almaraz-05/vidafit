@@ -1,13 +1,8 @@
 import "./MyWorkouts.css";
+import workouts from "../data/workouts";
 import { Dumbbell, Heart, Gauge, Ellipsis, Plus } from "lucide-react";
 function MyWorkouts() {
 
-    const activities = [
-        { id: 1, name: "Upper Body", icon: Dumbbell, iconClass: "upper-activity-icon", exercises: "6 exercises", time: "1h 15m" },
-        { id: 2, name: "Lower Body", icon: Dumbbell, iconClass: "lower-activity-icon", exercises: "6 exercises", time: "1h 5m"},
-        { id: 3, name: "Cardio", icon: Heart, iconClass: "cardio-activity-icon", runType: "Recovery Run", time: "45m"},
-        { id: 4, name: "Core & Abs", icon: Gauge, iconClass: "core-activity-icon", exercises: "6 exercises", time: "20m" }
-    ];
 
     return (
         <section className="my-workouts">
@@ -19,22 +14,22 @@ function MyWorkouts() {
 
             {/* .map() our workouts wrapped within a div for the full content*/}
             <div className=" my-workouts-content">
-                {activities.map((activity) => {
-                    const Icon = activity.icon;
+                {workouts.map((workout) => {
+                    const Icon = workout.icon;
 
                     return (
 
-                        <div className="my-workouts-card" key={activity.name}>
+                        <div className="my-workouts-card" key={workout.name}>
                             
-                            <div className={`my-workouts-icon ${activity.iconClass}`} > 
+                            <div className={`my-workouts-icon ${workout.iconClass}`} > 
                                 <Icon />
                             </div>
                             
 
 
                             <div className="my-workouts-info">
-                                <h3>{activity.name}</h3>
-                                <p>{activity.exercises || activity.runType} • {activity.time}</p>
+                                <h3>{workout.name}</h3>
+                                <p>{workout.exercises || workout.runType} • {workout.time}</p>
                             </div>
 
 

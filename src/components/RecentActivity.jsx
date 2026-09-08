@@ -1,13 +1,8 @@
 import { ChevronRight, Dumbbell, Heart } from "lucide-react";
 import "./RecentActivity.css";
+import workouts from "../data/workouts";
 
 function RecentActivity() {
-
-    const activities = [
-        { name: "Upper Body",  icon: Dumbbell, iconClass: "upper-activtiy-icon",  date: "Today",     exercises: "6 exercises", time: "1h 15m" },
-        { name: "Lower Body",  icon: Dumbbell, iconClass: "lower-activity-icon",  date: "August 17", exercises: "5 exercises", time: "1h 5m" },
-        { name: "Cardio", icon: Heart,    iconClass: "cardio-activity-icon", date: "August 15", distance: "4 miles", time: "42m" }
-    ];
 
     return (
         <section className="recent-activity">
@@ -16,19 +11,19 @@ function RecentActivity() {
                 <button className="recent-activity-see-all">See all</button>
             </div>
 
-            {activities.map((activity) => {
-                const Icon = activity.icon;
+            {workouts.map((workout) => {
+                const Icon = workout.icon;
 
                 return (
-                    <button className="recent-activity-card" key={activity.name}>
-                        <div className={`recent-activity-icon ${activity.iconClass}`}>
+                    <button className="recent-activity-card" key={workout.name}>
+                        <div className={`recent-activity-icon ${workout.iconClass}`}>
                             <Icon />
                         </div>
 
 
                         <div className="recent-activity-info">
-                            <h3>{activity.name}</h3>
-                            <p>{activity.date} • {activity.exercises || activity.distance} • {activity.time}</p>
+                            <h3>{workout.name}</h3>
+                            <p>{workout.date} • {workout.exercises || workout.distance} • {workout.time}</p>
                         </div>
 
                         <div className="recent-activity-chevron">
