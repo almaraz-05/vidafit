@@ -15,7 +15,7 @@ function RecentActivity() {
                 const Icon = workout.icon;
 
                 return (
-                    <button className="recent-activity-card" key={workout.name}>
+                    <button className="recent-activity-card" key={workout.id}>
                         <div className={`recent-activity-icon ${workout.iconClass}`}>
                             <Icon />
                         </div>

@@ -1,6 +1,7 @@
 import "./MyWorkouts.css";
 import workouts from "../data/workouts";
-import { Dumbbell, Heart, Gauge, Ellipsis, Plus } from "lucide-react";
+import { Ellipsis, Plus } from "lucide-react";
+import { Link } from "react-router-dom";
 function MyWorkouts() {
 
 
@@ -19,19 +20,24 @@ function MyWorkouts() {
 
                     return (
 
-                        <div className="my-workouts-card" key={workout.name}>
-                            
-                            <div className={`my-workouts-icon ${workout.iconClass}`} > 
-                                <Icon />
-                            </div>
-                            
+                        <div className="my-workouts-card" key={workout.id}>
+
+                            <Link
+                                to={`/workouts/${workout.id}`}
+                                className="my-workouts-link"
+                            >
+
+                                <div className={`my-workouts-icon ${workout.iconClass}`} >
+                                    <Icon />
+                                </div>
 
 
-                            <div className="my-workouts-info">
-                                <h3>{workout.name}</h3>
-                                <p>{workout.exercises || workout.runType} • {workout.time}</p>
-                            </div>
 
+                                <div className="my-workouts-info">
+                                    <h3>{workout.name}</h3>
+                                    <p>{workout.exercises || workout.runType} • {workout.time}</p>
+                                </div>
+                            </Link>
 
 
 
@@ -44,18 +50,18 @@ function MyWorkouts() {
 
 
 
-                        
+
 
                     );
 
                 })}
 
                 <button className="add-workout-card">
-                    <Plus /> 
+                    <Plus />
                     <span>Add New Workout</span>
                 </button>
 
-                
+
 
             </div>
         </section>
