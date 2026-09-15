@@ -59,7 +59,20 @@ const workouts = [
         icon: Dumbbell,
         iconClass: "lower-activity-icon",
         exercises: "6 exercises",
-        time: "1h 5m"
+        time: "1h 5m",
+
+        exerciseList: [
+            {
+                id: 1,
+                name: "Barbell Squat",
+                sets: 4,
+                reps: 5
+            },
+
+            {
+                id: "Romanian DeadLift"
+            }
+        ]
     },
     {
         id: 3,

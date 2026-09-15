@@ -1,5 +1,7 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import workouts from "../data/workouts";
+import { ChevronLeft } from "lucide-react";
+import "./WorkoutDetails.css";
 
 function WorkoutDetails() {
     const { workoutId } = useParams();
@@ -11,6 +13,15 @@ function WorkoutDetails() {
 
     return (
         <main>
+
+            <Link to="/workouts" className="back-to-workouts">
+                <ChevronLeft />
+                Back to Workouts
+            </Link>
+
+
+
+
             <h1>Workout Details</h1>
             <p>{workout.name}</p>
             <p>{workout.exercises}</p>

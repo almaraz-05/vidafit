@@ -1,0 +1,8 @@
+.back-to-workouts {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--color-primary);
+    text-decoration: none;
+    margin-top: 12px;
+}
