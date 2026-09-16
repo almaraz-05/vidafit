@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import workouts from "../data/workouts";
-import { ChevronLeft } from "lucide-react";
+import { ChevronLeft, Dumbbell } from "lucide-react";
 import "./WorkoutDetails.css";
 
 function WorkoutDetails() {
@@ -12,20 +12,32 @@ function WorkoutDetails() {
     }
 
     return (
-        <main>
+        <main className="workout-details">
 
             <Link to="/workouts" className="back-to-workouts">
-                <ChevronLeft />
+                <ChevronLeft size={36} strokeWidth={1.5}/>
                 Back to Workouts
             </Link>
 
+            <div className="workout-details-header">
+                <div className="workout-details-header-icon">
+                    <Dumbbell />
+                </div>
+
+                <div className="workout-details-header-content">
+                    <p>{workout.type}</p>
+                    <h1>{workout.name}</h1>
+                    <p>{workout.description}</p>
+                </div>
+            </div>
 
 
 
-            <h1>Workout Details</h1>
+
+            {/* <h1>Workout Details</h1>
             <p>{workout.name}</p>
             <p>{workout.exercises}</p>
-            <p>{workout.time}</p>
+            <p>{workout.time}</p> */}
 
 
             {workout.exerciseList.map((exercise) => (

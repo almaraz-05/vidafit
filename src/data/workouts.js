@@ -4,6 +4,8 @@ const workouts = [
     {
         id: 1,
         name: "Upper Body",
+        type: "Strength",
+        description: "Build strength and control with focused upper body work.",
         icon: Dumbbell,
         iconClass: "upper-activity-icon",
         exercises: "6 exercises",
@@ -56,6 +58,8 @@ const workouts = [
     {
         id: 2,
         name: "Lower Body",
+        type: "Strength",
+        description: "Build strength and control with focused upper body work.",
         icon: Dumbbell,
         iconClass: "lower-activity-icon",
         exercises: "6 exercises",
