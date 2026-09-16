@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import workouts from "../data/workouts";
-import { ChevronLeft, Dumbbell, Clock } from "lucide-react";
+import { ChevronLeft, ChevronRight, Dumbbell, Clock } from "lucide-react";
 import "./WorkoutDetails.css";
 
 function WorkoutDetails() {
@@ -15,7 +15,7 @@ function WorkoutDetails() {
         <main className="workout-details">
 
             <Link to="/workouts" className="back-to-workouts">
-                <ChevronLeft size={36} strokeWidth={1.5}/>
+                <ChevronLeft size={36} strokeWidth={1.5} />
                 Back to Workouts
             </Link>
 
@@ -31,33 +31,59 @@ function WorkoutDetails() {
                 </div>
             </div>
 
-        <div className="workout-details-stats">
-            <div className="workout-stat">
-                <Dumbbell />
-                <div className="workout-stat-info">
-                <p>{workout.exerciseList.length}</p>
-                <span>Exercises</span>
+            <div className="workout-details-stats">
+                <div className="workout-stat">
+                    <Dumbbell />
+                    <div className="workout-stat-info">
+                        <p>{workout.exerciseList.length}</p>
+                        <span>Exercises</span>
+                    </div>
+                </div>
+
+                <div className="workout-stat">
+                    <Clock />
+                    <div className="workout-stat-info">
+                        <p>~{workout.time}</p>
+                        <span>Estimated Time</span>
+                    </div>
                 </div>
             </div>
 
-            <div className="workout-stat">
-                <Clock />
-                <div className="workout-stat-info">
-                <p>~{workout.time}</p>
-                <span>Estimated Time</span>
+
+            <section className="workout-details-exercises">
+                <div className="workout-details-exercises-header">
+                    <h2>Exercises</h2>
+                    <button>Edit</button>
                 </div>
-            </div>
-        </div>
 
+                <div className="workout-details-exercises-list">
 
+                    {workout.exerciseList.map((exercise) => (
+                        <div className="workout-details-exercise-card" key={exercise.id}>
+                            <div className="exercise-card-number">
+                                {exercise.id}
+                            </div>
+                            <div className="exercise-card-info">
+                                <h3>{exercise.name}</h3>
+                                <p>{exercise.muscleGroup}</p>
+                            </div>
 
+                            <div className="exercise-card-sets">
+                                <p>{exercise.sets} x {exercise.reps}</p>
+                                <span>sets x reps</span>
+                            </div>
 
-            {workout.exerciseList.map((exercise) => (
-                <div key={exercise.id}>
-                    <h3>{exercise.name}</h3>
-                    <p>{exercise.sets} sets x {exercise.reps} reps</p>
+                            <ChevronRight className="exercise-card-chevron" />
+                        </div>
+                    ))}
+
                 </div>
-            ))}
+
+
+            </section>
+
+
+
         </main>
     );
 }

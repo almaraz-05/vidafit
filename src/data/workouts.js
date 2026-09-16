@@ -15,6 +15,7 @@ const workouts = [
             {
                 id: 1,
                 name: "Bench Press",
+                muscleGroup: "Chest, Shoulders",
                 sets: 4,
                 reps: 8
             },
@@ -22,6 +23,7 @@ const workouts = [
             {
                 id: 2,
                 name: "Pull Ups",
+                muscleGroup: "Back",
                 sets: 4,
                 reps: 8
             },
@@ -29,6 +31,7 @@ const workouts = [
             {
                 id: 3,
                 name: "Shoulder Press",
+                muscleGroup: "Shoulders",
                 sets: 3,
                 reps: 10
             },
@@ -36,6 +39,7 @@ const workouts = [
             {
                 id: 4,
                 name: "Seated Cable Row",
+                muscleGroup: "Back",
                 sets: 3,
                 reps: 10
             },
@@ -43,6 +47,7 @@ const workouts = [
             {
                 id: 5,
                 name: "Lateral Raise",
+                muscleGroup: "Shoulders",
                 sets: 3,
                 reps: 12
             },
@@ -50,6 +55,7 @@ const workouts = [
             {
                 id: 6,
                 name: "Tricep Pushdowns",
+                muscleGroup: "Triceps",
                 sets: 3,
                 reps: 12
             }
@@ -69,12 +75,18 @@ const workouts = [
             {
                 id: 1,
                 name: "Barbell Squat",
+                muscleGroup: "Quads, Glutes, Hamstrings",
                 sets: 4,
                 reps: 5
             },
 
             {
-                id: "Romanian DeadLift"
+                id: 2,
+                name: "Romanian DeadLift",
+                muscleGroup: "Hamstrings, Back",
+                sets: 3,
+                reps: 8
+                
             }
         ]
     },
