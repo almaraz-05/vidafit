@@ -1,14 +1,20 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import workouts from "../data/workouts";
 import { ChevronLeft, ChevronRight, Dumbbell, Clock, Play } from "lucide-react";
 import "./WorkoutDetails.css";
 
 function WorkoutDetails() {
     const { workoutId } = useParams();
+    const navigate = useNavigate();
     const workout = workouts.find((workout) => workout.id === Number(workoutId));
 
     if (!workout) {
         return <h1>Workout not found</h1>
+    }
+    const WorkoutIcon = workout.icon;
+
+    function handleStartWorkout() {
+        navigate(`/workouts/${workout.id}/start`)
     }
 
     return (
@@ -21,7 +27,7 @@ function WorkoutDetails() {
 
             <div className="workout-details-header">
                 <div className="workout-details-header-icon">
-                    <Dumbbell />
+                    <WorkoutIcon size={50}/>
                 </div>
 
                 <div className="workout-details-header-content">
@@ -35,8 +41,18 @@ function WorkoutDetails() {
                 <div className="workout-stat">
                     <Dumbbell />
                     <div className="workout-stat-info">
-                        <p>{workout.exerciseList.length}</p>
-                        <span>Exercises</span>
+                        <p>
+                            {workout.type === "Strength"
+                                ? workout.exerciseList.length
+                                : workout.runType
+                            }
+                        </p>
+                        <span>
+                            {workout.type === "Strength"
+                                ? "Exercises"
+                                : "Cardio Type"
+                            }
+                        </span>
                     </div>
                 </div>
 
@@ -89,7 +105,7 @@ function WorkoutDetails() {
 
                 </div>
 
-                <button className="start-workout-button">
+                <button className="start-workout-button" onClick={handleStartWorkout}>
                     <Play className="start-workout-plus" />
                     Start Workout
                 </button>
