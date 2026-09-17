@@ -12,7 +12,8 @@
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
-    margin-bottom: 28px;
+    margin-bottom: 15px;
+    margin-left: -15px;
 }
 
 .workout-details-header-icon {
@@ -83,6 +84,11 @@
     border: 1px solid var(--color-border);
     border-radius: 14px;
 
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+
 }
 
 .exercise-card-number {
@@ -106,8 +112,13 @@
     margin-top: 8px;
 }
 
-.exercise-card-chevron {
-    margin-left: auto;
+.exercise-card-sets p {
+    font-weight: 600;
+    margin: 0;
+}
+.exercise-card-sets span {
+    font-size: 14px;
+    color: var(--color-text-muted)
 }
 
 .start-workout-button {

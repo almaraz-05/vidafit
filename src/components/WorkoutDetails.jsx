@@ -86,8 +86,8 @@ function WorkoutDetails() {
 
                             {workout.type === "Strength" && (
                                 <div className="exercise-card-sets">
-                                    <p>{exercise.sets} x {exercise.reps}</p>
-                                    <span>sets x reps</span>
+                                    <p>{exercise.sets} sets </p>
+                                    <span>{exercise.reps} reps</span>
                                 </div>
                             )}
 
@@ -99,7 +99,6 @@ function WorkoutDetails() {
 
                             )}
 
-                            <ChevronRight className="exercise-card-chevron" />
                         </div>
                     ))}
 
