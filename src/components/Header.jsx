@@ -1,10 +1,11 @@
 import "./Header.css";
 function Header() {
     return (
-        <header className="header">
-            <h1>VidaFit</h1>
+        <header>
+            <h2>Good evening!</h2>
+            <p>Ready to move?</p>
         </header>
-        
+
 
     );
 
