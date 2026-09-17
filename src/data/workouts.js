@@ -8,7 +8,6 @@ const workouts = [
         description: "Build strength and control with focused upper body work.",
         icon: Dumbbell,
         iconClass: "upper-activity-icon",
-        exercises: "6 exercises",
         time: "1h 15m",
 
         exerciseList: [
@@ -68,7 +67,6 @@ const workouts = [
         description: "Build strength and control with focused upper body work.",
         icon: Dumbbell,
         iconClass: "lower-activity-icon",
-        exercises: "6 exercises",
         time: "1h 5m",
 
         exerciseList: [
@@ -87,6 +85,30 @@ const workouts = [
                 sets: 3,
                 reps: 8
                 
+            },
+            {
+                id: 3,
+                name: "Bulgarian Split Squat",
+                muscleGroup: "Quads, Glutes",
+                sets: 3,
+                reps: 8
+                
+            },
+            {
+                id: 4,
+                name: "Leg Curl",
+                muscleGroup: "Hamstrings",
+                sets: 3,
+                reps: 8
+                
+            },
+            {
+                id: 5,
+                name: "Calf Raises",
+                muscleGroup: "Calves",
+                sets: 3,
+                reps: 12
+                
             }
         ]
     },
@@ -101,10 +123,25 @@ const workouts = [
     {
         id: 4,
         name: "Core & Abs",
+        exerciseList: [
+            {   
+                id: 1,
+                name: "Hanging Leg Raises"
+
+            },
+
+            {
+                id: 2,
+                name: "Hollow Body Hold"
+            },
+            {
+                id: 3,
+                name: "Side Plank"
+            }
+        ],
         icon: Gauge,
         iconClass: "core-activity-icon",
-        exercises: "6 exercises",
-        time: "20m"
+        time: "15m"
     }
 ];
 

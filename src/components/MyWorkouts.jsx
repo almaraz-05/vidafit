@@ -35,7 +35,9 @@ function MyWorkouts() {
 
                                 <div className="my-workouts-info">
                                     <h3>{workout.name}</h3>
-                                    <p>{workout.exercises || workout.runType} • {workout.time}</p>
+                                    <p>{workout.exerciseList
+                                        ? `${workout.exerciseList.length} exercises`
+                                        : workout.runType} • {workout.time}</p>
                                 </div>
                             </Link>
 
