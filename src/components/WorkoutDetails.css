@@ -1,6 +1,7 @@
 .workout-details {
     padding: 24px 20px 120px;
-
+    max-width: 480px;
+    margin: 0 auto;
 }
 
 .back-to-workouts {
@@ -68,6 +69,7 @@
 .workout-details-exercises-header {
     display: flex;
     justify-content: space-between;
+    margin-top: 25px;
 }
 
 
@@ -80,6 +82,7 @@
     background-color: var(--color-surface);
     border: 1px solid var(--color-border);
     border-radius: 14px;
+
 }
 
 .exercise-card-number {
@@ -100,8 +103,41 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+    margin-top: 8px;
 }
 
 .exercise-card-chevron {
     margin-left: auto;
+}
+
+.start-workout-button {
+    background-color: var(--color-primary);
+    color: white;
+    width: 100%;
+    margin-top: 16px;
+    padding: 16px;
+    border-radius: 14px;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.start-workout-plus {
+    fill: white;
+}
+
+.workout-details-exercises-header button {
+    background: none;
+    border: none;
+    font: inherit;
+    color: var(--color-accent);
+    cursor: pointer;
+    padding: 0;
 }

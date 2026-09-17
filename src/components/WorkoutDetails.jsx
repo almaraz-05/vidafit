@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import workouts from "../data/workouts";
-import { ChevronLeft, ChevronRight, Dumbbell, Clock } from "lucide-react";
+import { ChevronLeft, ChevronRight, Dumbbell, Clock, Play } from "lucide-react";
 import "./WorkoutDetails.css";
 
 function WorkoutDetails() {
@@ -78,6 +78,11 @@ function WorkoutDetails() {
                     ))}
 
                 </div>
+
+                <button className="start-workout-button">
+                    <Play className="start-workout-plus"/>
+                    Start Workout
+                </button>
 
 
             </section>
