@@ -64,7 +64,7 @@ const workouts = [
         id: 2,
         name: "Lower Body",
         type: "Strength",
-        description: "Build strength and control with focused upper body work.",
+        description: "Build strength and control with focused lower body work.",
         icon: Dumbbell,
         iconClass: "lower-activity-icon",
         time: "1h 5m",
@@ -115,33 +115,56 @@ const workouts = [
     {
         id: 3,
         name: "Cardio",
+        type: "Cardio",
+        description: "Build endurance and aerobic fitness with focused cardio work.",
         icon: Heart,
         iconClass: "cardio-activity-icon",
         runType: "Recovery Run",
-        time: "45m"
+        time: "45m",
+        exerciseList: [
+            {
+                id: 1,
+                name: "Recovery Run",
+                muscleGroup: "Running",
+                duration: "45 min"
+            }
+        ]
     },
     {
         id: 4,
         name: "Core & Abs",
+        type: "Strength",
+        description: "Build core strength and stability with focused core work.",
+        icon: Gauge,
+        iconClass: "core-activity-icon",
+        time: "15m",
         exerciseList: [
             {   
                 id: 1,
-                name: "Hanging Leg Raises"
+                name: "Hanging Leg Raises",
+                muscleGroup: "Core",
+                sets: 3,
+                reps: 10
 
             },
 
             {
                 id: 2,
-                name: "Hollow Body Hold"
+                name: "Hollow Body Hold",
+                muscleGroup: "Core",
+                sets: 3,
+                reps: 10
+
             },
             {
                 id: 3,
-                name: "Side Plank"
+                name: "Side Plank",
+                muscleGroup: "Core",
+                sets: 3,
+                reps: 10
             }
-        ],
-        icon: Gauge,
-        iconClass: "core-activity-icon",
-        time: "15m"
+        ]
+        
     }
 ];
 

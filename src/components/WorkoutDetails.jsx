@@ -68,10 +68,20 @@ function WorkoutDetails() {
                                 <p>{exercise.muscleGroup}</p>
                             </div>
 
-                            <div className="exercise-card-sets">
-                                <p>{exercise.sets} x {exercise.reps}</p>
-                                <span>sets x reps</span>
-                            </div>
+                            {workout.type === "Strength" && (
+                                <div className="exercise-card-sets">
+                                    <p>{exercise.sets} x {exercise.reps}</p>
+                                    <span>sets x reps</span>
+                                </div>
+                            )}
+
+                            {workout.type === "Cardio" && (
+                                <div className="exercise-card-sets">
+                                    <p>{exercise.duration}</p>
+                                    <span>duration</span>
+                                </div>
+
+                            )}
 
                             <ChevronRight className="exercise-card-chevron" />
                         </div>
@@ -80,7 +90,7 @@ function WorkoutDetails() {
                 </div>
 
                 <button className="start-workout-button">
-                    <Play className="start-workout-plus"/>
+                    <Play className="start-workout-plus" />
                     Start Workout
                 </button>
 
