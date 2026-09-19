@@ -38,10 +38,10 @@ function ActiveWorkout() {
                     <p>WORKOUT TIME</p>
                 </div>
 
-                <div className="pause-resume-button">
+                <button className="pause-resume-button">
                         <Pause />
                         <p>Pause</p>
-                </div>
+                </button>
             </div>
 
 
