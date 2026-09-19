@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import workouts from "../data/workouts";
 import "./ActiveWorkout.css";
-import { Dumbbell, ChevronLeft, ChevronDown, ChevronUp, Check } from "lucide-react";
+import { Dumbbell, ChevronLeft, ChevronDown, ChevronUp, Check, Pause } from "lucide-react";
 
 function ActiveWorkout() {
 
@@ -32,6 +32,18 @@ function ActiveWorkout() {
                 </div>
             </div>
 
+            <div className="time-pause-resume-card">
+                <div className="workout-time">
+                    <h2>00:12</h2>
+                    <p>WORKOUT TIME</p>
+                </div>
+
+                <div className="pause-resume-button">
+                        <Pause />
+                        <p>Pause</p>
+                </div>
+            </div>
+
 
 
             <section className="workout-details-exercises">
@@ -52,7 +64,7 @@ function ActiveWorkout() {
                                     <p>{exercise.sets} sets </p>
                                     <span>{exercise.reps} reps</span>
                                 </div>
-                            )}
+                            ) }
 
                             {workout.type === "Cardio" && (
                                 <div className="exercise-card-sets">

@@ -152,3 +152,17 @@
     cursor: pointer;
     padding: 0;
 }
+
+.time-pause-resume-card {
+    display: flex;
+    justify-content: space-around;
+}
+
+.workout-time,
+.pause-resume-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+

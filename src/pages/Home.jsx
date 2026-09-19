@@ -13,7 +13,6 @@ function Home() {
         <main className="home">
 
             <Header />
-            
             <WorkoutCard />
             <WeeklyOverview />
             <QuickStart />
